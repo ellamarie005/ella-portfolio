@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Header from 'components/Header';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">My Name is Ella</div>
+      <div className="App">
+        <Header />
+      </div>
     );
   }
-}
-
-const header = () => {
-  return <header>I am a header</header>
 }
 
 export default App;
