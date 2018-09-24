@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import logo from "assets/Jacob-50.png";
-import HamburgerMenu from "components/ui/HamburgerMenu";
-import logoWhite from "assets/Jacob-white-50.png";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import logo from 'assets/2-copy.png';
+import HamburgerMenu from 'components/ui/HamburgerMenu';
+import logoWhite from 'assets/1-copy.png';
 
 class Header extends Component {
   state = {
@@ -10,7 +10,7 @@ class Header extends Component {
   };
 
   toggleMenu = () => {
-    // the exclamation point says the opposite of the "open" state
+    // the exclamation point says the opposite of the 'open' state
     this.setState({ open: !this.state.open });
   };
 
@@ -18,27 +18,27 @@ class Header extends Component {
     const { open } = this.state;
     return (
       <HeaderWrapper>
-        <nav className="nav__left">
+        <nav className='nav__left'>
           <span>
-            <a href="">About</a>
+            <a href=''>About</a>
           </span>
           <span>
-            <a href="">Portfolio</a>
+            <a href=''>Projects</a>
           </span>
         </nav>
-        <img className="logo__blue" src={logo} alt="logo" />
-        <img className="logo__white" src={logoWhite} alt="logo" />
-        <nav className="nav__right">
+        <img className='logo__blue' src={logo} alt='logo' />
+        <img className='logo__white' src={logoWhite} alt='logo' />
+        <nav className='nav__right'>
           <span>
-            <a href="">UX Talks</a>
+            <a href=''>Skills</a>
           </span>
           <span>
-            <a href="">Resume</a>
+            <a href=''>Blog</a>
           </span>
         </nav>
         <HamburgerMenu
           onClick={this.toggleMenu}
-          className={open ? "open" : ""}
+          className={open ? 'open' : ''}
         />
       </HeaderWrapper>
     );
@@ -80,11 +80,11 @@ const HeaderWrapper = styled.header`
       text-decoration: none;
       font-size: 18px;
       position: relative;
-      opacity: 0.7;
+      /* opacity: 0.7; */
       transition: opacity 0.4s ease-in-out;
 
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: -7px;
         left: 0;
@@ -104,6 +104,7 @@ const HeaderWrapper = styled.header`
 
     &.logo {
       &__blue {
+        opacity: 0.7;
         display: block;
       }
       &__white {
@@ -134,6 +135,7 @@ const HeaderWrapper = styled.header`
           display: none;
         }
         &__white {
+          opacity: 0.7;
           display: block;
         }
       }

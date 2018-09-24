@@ -1,13 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
 }
 
 @media screen and (min-width: 1024px) {
   body {
-    padding: 20px;
   }
 }
