@@ -5,12 +5,16 @@ class AboutMe extends Component {
   render() {
     return (
       <Portfolio>
-        <Row>
-          <div>
+        <Row className='row'>
+          <div className='col-md-6'>
             <h1>ABOUT ME</h1>
-            <p>Ella Tolentino</p>
+            <p>I am a Research Assistant turned Software Developer.</p>
+            <br />
+            <p>During my free time, I enjoy...</p>
           </div>
-          <div>Picture</div>
+          <div className='col-md'>
+            Picture
+          </div>
         </Row>
       </Portfolio>
     )
@@ -30,7 +34,8 @@ flex-direction: row;
 h1 {
   font-size: 40px;
   text-align: center;
-  
+  margin: 20px;
+}
 `
 
 export default AboutMe;

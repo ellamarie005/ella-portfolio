@@ -84,7 +84,7 @@ const Content = styled.div`
   @media screen and (min-width: 1024px) {
     height: 100%;
     min-height: 700px;
-    padding: 63px 0px;
+    padding: 70px 0px;
   }
 `;
 
