@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import logo from 'assets/2-copy.png';
 import HamburgerMenu from 'components/ui/HamburgerMenu';
 import logoWhite from 'assets/1-copy.png';
+import logo from 'assets/2-copy.png';
 
 class Header extends Component {
   state = {
